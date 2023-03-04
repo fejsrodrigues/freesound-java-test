@@ -24,6 +24,12 @@ freesound.code = #code de autorizacao da api
 
 ### Rodando os testes
 
+via docker
+```shell
+ docker run -it --rm --name freesound-test-java -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.8.3-openjdk-11 mvn test
+```
+
+
 via Maven
 ```shell
 mvn test
